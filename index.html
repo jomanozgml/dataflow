@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<title> Bottle Inc. : Working Solution </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="ws.css">
+</head>
+
+<body>
+	<article id="intro" onclick="openContent(this)"><br/><br/><br/><br/><br/> WORKING SOLUTION </article>
+	<!--<article id="introCircle" onclick="openContent(this)"></article>-->
+	<div id="sidebar">
+		<h1 id="sideTopBar"> Index </h1>
+		<a onclick="showContent('jobAssignment')" style="margin-top:40px"> Job Assignment </a>
+		<a onclick="showContent('dataSourcing')"> Data Sourcing </a>
+		<a onclick="showContent('dataCollection')"> Data Collection </a>
+		<a onclick="showContent('dataSelection')"> Data Selection </a>
+		<a onclick="showContent('dataAnalysis')"> Data Analysis <br/> and Handling </a>
+		<a onclick="showContent('processingUnit')"> Processing Unit </a>
+		<a onclick="showContent('shadowUnit')"> Shadow Unit </a>
+		<a onclick="showContent('trackingAndSearching')"> Tracking and <br/> Searching Unit </a>
+		<a onclick="showContent('backups')"> Backups and Storge Unit </a>
+		<a onclick="showContent('additionalReport')"> Additional Report Writing </a>
+		<!--<a onclick="showContent('storageOfData')"> Completion </a>-->
+		<a onclick="showContent('completionData')"> Completion </a>
+		<!--<a onclick="showContent('storageOfData')"> Communication/Reporting <br/> and Publishing </a>-->
+		<a onclick="showContent('reportingStatus')"> Reporting Status </a>
+		<a onclick="showContent('mediumUsed')"> Medium Used </a>
+		<!--<a onclick="showContent('handoverStatus')"> Handover Status </a>-->
+		<a onclick="showContent('all')"> View All <br/><br/> </a>
+	</div>
+	
+	<div id="mainBody">
+		<h1 id="topperBar"></h1>
+		<h1 id="topBar"> Working Solution </h1>
+		<div class="bars" id="sideBars" onclick="openSideNav(this)">
+			<div class="bar1" id="sideBar1"></div>
+			<div class="bar2" id="sideBar2"></div>
+		</div>
+		<div class="blocks" id="jobAssignment" style="margin-top:40px">
+			<span id="jobAssignment1" onclick="toggleVisibility('classHiddenContent00')"> Job Assignment </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('risContent')"> Regular Information Sourcing </p>
+			<p class="headers" onclick="toggleVisibility('upsContent')"> Updates Sourcing </p>
+		</div>
+		<div class="blocks" id="dataSourcing">
+			<span id="dataSourcing1" onclick="toggleVisibility('classHiddenContent01')"> Data Sourcing </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('esContent')"> External Sources </p>
+				<ul class="classHiddenContent01" id="esContent" style="display:none">
+				 <li> Data Firms (Private and government)</li>
+				 <li> Data Partners (Search engines, Digital advertising-marketing-PR agencies, 
+				 Digital Performance management, Data Trackers, Consumers’ Brand/Product engagement trackers, apps, software companies) </li>
+				<li> Internet Feeds (Raw sources, Data Bases, Flat Files, Web Services, RSS Feeds) </li>
+				<li> Government and Private Organizations (In house and third party collaboration) </li>
+				<li> Universities </li>
+				<li> Research Group and Agencies </li>
+				</ul>
+			<p class="headers" onclick="toggleVisibility('isContent')"> Internal Sources </p>
+				<ul class="classHiddenContent01" id="isContent" style="display:none">
+				<li> Internal DR teams and research groups and individuals </li>
+				<li> Collaboration and group projects (on-field, off-field, intelligence) </li>
+				<li> Interest groups </li>
+				<li> Community </li>
+				</ul>
+			<p class="headers" onclick="toggleVisibility('inContent')"> Intelligence </p>
+				<ul class="classHiddenContent01" id="inContent" style="display:none">
+				<li> Auto and Manual Tracking (Social medias activity, feedback analysis,
+				 Trend effects, Events, festivals, offers and distractions effects, technology and 
+				 brand consciousness, reports  and publishment counts) </li>
+				<li> Spying agency or individuals </li>
+				<li> Secret missions  </li>
+				</ul>
+			<p class="headers" onclick="toggleVisibility('suContent')"> Supportive </p>
+				<ul class="classHiddenContent01" id="suContent" style="display:none">
+				<li> Books, reports, articles and thesis </li>
+				</ul>
+		</div>
+		<div class="blocks" id="dataCollection">
+			<span id="dataCollection1" onclick="toggleVisibility('classHiddenContent02')"> Data <br/>Collection </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('mesContent')"> Methods for External Sources </p>
+				<ul class="classHiddenContent02" id="mesContent" style="display:none">
+				<li> News Letter </li>
+				<li> Memberships </li>
+				<li> Partnerships by Report in-out relations </li>
+				<li> Inquiries </li>
+				<li> Buy and payments </li>
+				<li> Uses of resources to research </li>
+				<li> News and activity tracking and updates </li>
+				<li> Social Medias and Blogs tracking </li>
+				</ul>
+			<p class="headers" onclick="toggleVisibility('misContent')"> Methods for Internal Sources </p>
+				<ul class="classHiddenContent02" id="misContent" style="display:none">
+				<li> Regular inquiries and research activities </li>
+				<li> Crowd Sourcing </li>
+				<li> Programs and Events modeling and organizing </li>
+				<li> Surveys and questionnaires (individual or group) </li>
+				<li> Individual and community Sentiment analysis </li>
+				<li> Network analysis </li>
+				<li> Social Media Analysis </li>
+				<li> Competition, users and consumers’ activity tracking and analysis </li>
+				</ul>
+			<p class="headers" onclick="toggleVisibility('minContent')"> Methods for Intelligence </p>
+				<ul class="classHiddenContent02" id="minContent" style="display:none">
+				<li> Tracking tools and methods utilization </li>
+				<li> Specific type, competition, individual target activity reporting </li>
+				<li> Timely reporting, inquiring and there delivery </li>
+				</ul>
+			<p class="headers" onclick="toggleVisibility('msuContent')"> Methods for Supportive </p>
+				<ul class="classHiddenContent02" id="msuContent" style="display:none">
+				<li> Basic source identification like stores and libraries (online/offline) </li>
+				<li> Data or information highlighting </li>
+				<li> Data or information referencing </li>
+				</li> Data or information analyzing and decision making </li>
+				</ul>
+			<div class="metaData" onclick="toggleVisibility('dg1')">
+				<i class="fa fa-file-text-o" style="font-size:48px;color:gray"></i>
+			</div>
+			<div class="dataGeneration" style="display:none" id="dg1">
+				<p> From Data Sourcing and Collection </p>
+				<ul>
+					<li> Data Types, their exact sources and <br/>
+						Methods of Collection </li>
+					<li> Limitation and Constraints </li>
+					<li> Opportunities </li>
+				</ul>
+			</div>
+		</div>
+		<div class="blocks" id="dataSelection">
+			<span id="dataSelection1" onclick="toggleVisibility('ofContent')"> Data Selection </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('ofContent')"> Flowchart </p>
+			<div class="tree">
+			<ul class="flowChart 1" id="ofContent" style="display:none">
+				<li> <a> Data Selection </a>
+					<ul><li><a> From Basic Sources </a>
+							<ul><li><a> Raw </a>
+								<ul><li><a class="sideDown"> Selection </a>
+									<ul><li><a> Required </a></li>
+										<li><a id="arrowToRight"> Residue </a></li></ul>
+									</li></ul>
+								</li>
+								<li><a class="sideRight"> Complete </a></li>
+							</ul>
+						</li>
+						<li><a id="dashToLeft"> From Reprocessed </a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="pContainer" style="margin-left:-170px" id="containPara1">
+				<p class="floating "><a id="dashToUp1"> Data Review </a></p>
+				<p class="floating"><a id="dashToUp2"> Data Management </a></p>
+				<p class="floating"> Storage </p>
+			</div>
+			</div>
+			<div class="metaData" onclick="toggleVisibility('dg2')">
+				<i class="fa fa-file-text-o" style="font-size:48px;color:gray"></i>
+			</div>
+			<div class="dataGeneration" style="display:none" id="dg2">
+				<p> From Selection and Updates </p>
+				<ul>
+					<li> Data and Stats that need to be updated </li>
+					<li> Time/Amount/Resources used for data <br/>
+						updates and their state </li>
+					<li> Stats of required info and data, residue <br/>
+						data and rejected data (also reprocessed<br/>data) </li>
+				</ul>
+			</div>
+		</div>
+		<div class="blocks" id="dataAnalysis">
+			<span id="dataAnalysis1" > Data Analysis <br/> and Handling </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers"> Quality and Quantity Format </p>
+			<p class="headers"> Sub-division </p>
+			<p class="headers"> Clarity/Prioritization </p>
+			<p class="headers"> Identify Processing Need </p>
+			<p class="headers"> Ready/Preserve </p>
+			<div class="metaData" onclick="toggleVisibility('dg3')">
+				<i class="fa fa-file-text-o" style="font-size:48px;color:gray"></i>
+			</div>
+			<div class="dataGeneration" style="display:none" id="dg3">
+				<p> From Analysis and Handling </p>
+				<ul>
+					<li> Types and Formats of data we are getting </li>
+					<li> Amount of data needed to process </li>
+					<li> Types of info being prioritized </li>
+				</ul>
+			</div>
+		</div>
+		<div class="blocks" id="processingUnit">
+			<span id="processingUnit1" onclick="toggleVisibility('proContent')"> Processing Unit </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('proContent')"> Processing Unit Block Diagram </p>
+			<div class="tree">
+			<ul class="flowChart" id="proContent" style="display:none">
+				<li><a> Information </a>
+					<ul><li style="margin-left: -80px;"><a> Processing Needed </a>
+							<ul><li><a> By Format </a>
+									<ul><li><a> Digital </a>
+										<ul><li><a class="leftBranch"> Report </a>
+											<ul><li><a class="bDown middleLine" id="placeRight"> AI/ML<br/>(For Automated Input) </a></li>
+											</ul></li>
+											<li><a class="rightBranch"> Pic/Graph </a></li>
+										</ul></li>
+										<li><a class="rightBranch curveBranch"> Printed </a></li>
+									</ul>
+								</li>
+								<li style="margin-left: -60px;"><a> By Raw (Manual) </a>
+									<ul><li><a id="placeDown"> INPUT </a>
+										<ul><li style="margin-left: -110px;"><a class="dashToRight dtr4"> Categories </a>
+											<ul><li><a> Temporary System Storage </a>
+												<ul><li><a class="dashToRight dtr1"> PROCESSING </a>
+													<ul><li><a class="dashToRight dtr2"> SYSTEM INTERACTION </a>
+														<ul><li><a class="dashToRight dtr3"> Output Ready </a>
+															<ul><li style="margin-left: -52px;"><a class="leftBranch longBranch"> Automated Concluded Data/<br/>Formats in Documents </a></li>
+																<li><a class="lineDown"> Standard<br/>Design </a>
+																	<ul><li style="margin-top: 20px;"><a class="leftAutomated"> AI/ML (For Review) </a>
+																		<ul><li><a> Provision for Human Review and Edit<br/>designs, Formats and Conclusion </a>
+																			<ul><li><a class="dashToRight rightStorage"> Data Presenting(Alternatives)/OUTPUT<br/>as Reports/OUTPUT Data Types </a></li></ul>
+																		</li></ul>
+																	</li></ul></li>
+																<li><a class="rightBranch longBranch"> View and Analysis<br/>Feature </a></li>
+															</ul></li>
+														</ul></li>
+													</ul></li>
+												</ul></li>
+											</ul></li>
+											<li><a> Sub-Categories </a></li>
+										</ul></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li style="margin-left: -20px;"><a class="dashToDown dtd1"> Processing Not Needed </a></li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+			<div class="metaData" id="metaData1" onclick="toggleVisibility('dg4')">
+				<i class="fa fa-file-text-o" style="font-size:48px;color:gray"></i>
+			</div>
+			<div class="dataGeneration" style="display:none" id="dg4">
+				<p> From System Processing AI/ML & Interactions </p>
+				<ul>
+					<li> Pattern of data analysis, info read and scan,<br/>
+						time consumption, accuracy, relevancy </li>
+					<li> Data Estimation and Prediction </li>
+					<li> Pattern of Conclusions and their effect </li>
+					<li> User Access (legal and Illegal) </li>
+					<li> Factors change stats </li>
+					<li> Methods Stats </li>
+				</ul>
+			</div>
+			<div class="metaData" onclick="toggleVisibility('dg5')">
+				<i class="fa fa-file-text-o" style="font-size:48px;color:gray"></i>
+			</div>
+			<div class="dataGeneration" style="display:none" id="dg5">
+				<p> From Output data types  </p>
+				<ul>
+					<li> Popular data output formats, designs <br/> and templates </li>
+					<li> Popular report presentation styles </li>
+				</ul>
+			</div>
+		</div>
+		<div class="blocks" id="shadowUnit">
+			<span id="shadowUnit1" onclick="toggleVisibility('sdContent')"> Shadow Unit </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('sdContent')"> Shadow Unit Block Diagram </p>
+			<div class="noTree" id="sdContent" style="display:none">
+			<p> Shadow Unit </p>
+			<p> Initial Phase </p>
+			<a class="lefts" style="margin-bottom: 20px"> Info: <br/>
+				- Job Status <br/>
+				- Activity (job related and others) <br/>
+				- Check Point Backups and Storage <br/>
+				- Time and Data formats info <br/>
+				- Working Time Info 
+			</a>
+			<a class="arrowDown"> AI/ML <br/> Review </a>
+			<a class="arrowDown downSpace"> Generate <br/> Data & Storage </a>
+			<p> Live View/Display </p>
+			<a class="lefty" style="margin-bottom: 10px"> Report types: <br/>
+				- Confidential <br/>
+				- Private <br/>
+				- Public <br/><br/>
+				Info: <br/>
+				- Storage Check <br/>
+				- Data Report Check Post <br/>
+				- Report Tracking <br/><br/>
+				Amount of reports and data view <br/>
+				Location and IP Address <br/>
+				System Used to open and store <br/>
+				Systems other activity (searches) <br/>
+				Reports on Copying, Printing <br/><br/>
+			</a>
+			<a class="arrowUp" style="margin-top: 8px"> Stats and <br/> Conclusions </a>
+			<a class="arrowUp downSpace"> Storage & <br/> Generate <br/> Data & Storage </a>
+			<a class="arrowUp downSpace"> AI/ML <br/> Review </a>
+			<a class="arrowUp downSpace"> From <br/> Malwares </a>
+			<p> Communication Phase </p>
+			</div>
+		</div>
+		<div class="blocks" id="trackingAndSearching">
+			<span id="trackingAndSearching1" onclick="toggleVisibility('tnsContent')"> Tracking and <br/> Searching Unit </span>
+			<hr width="1px" size="auto"/>
+			<a href="trackingAndSearching.html" target="_blank" style="text-decoration: none;">
+			<p class="headers" onclick="toggleVisibility('tnsContent')"> Tracking and Searching Unit Block Diagram <br/><br/></p></a>
+			<!--<div class="noTree" id="tnsContent" style="display:none">
+			<a> Dedicated page for this unit </a></div>-->
+		</div>
+		<div class="blocks" id="backups">
+			<span id="backups1" onclick="toggleVisibility('bsuContent')"> Backups and <br/> Storage Unit </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('bsuContent')"> Backups and Storage Unit Block Diagram <br/><br/></p>
+			<div class="noTree" id="bsuContent" style="display:none">
+			<p> Backups and Storage Unit </p>
+			<p> Ongoing </p>
+			<p> Check Post Backups <br/>
+				Processing Ready Backups <br/>
+				Collected info and Residue <br/>
+				Processed and Not Processed <br/>
+				Shadow Unit Backups </p>
+			<p> Completed </p>
+			<p style="padding-bottom:60px;"> Output Data Storage <br/>
+				Backups of Data and Reports <br/>
+				References </p>
+			<p style="margin-top: 40px;"> Data Management <br/>Software/Tool </p>
+			<p class="lineArrowDown"> Data Generation </p>
+			<p class="lineArrowDown"> Display Data and Reports </p>
+			<p style="margin-bottom:40px;"> Backups and Storage </p>
+			</div>
+		</div>
+		<div class="blocks" id="additionalReport">
+			<span id="additionalReport1" onclick="toggleVisibility('arContent')"> Additional Report <br/> Writing </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('arContent')"> To Additional Report Writing </p>
+			<div class="tree">
+			<ul class="flowChart 2" id="arContent" style="display:none">
+				<li><a> To Additional Report Writing </a>
+					<ul><li><a> If Required </a>
+							<ul><li><a> From Outside of System </a>
+									<ul><li><a class="leftBranch"> 1. Hand Analysis <br/>
+											    2. Hand Conclusions <br/>
+												3. Hand Report Writing </a>
+										<ul><li><a class="middleLine bDown placeMiddle"> Completion </a></li></ul>	
+										</li>
+									</ul>
+								</li>
+								<li><a> From Inside of System </a>
+									<ul><li><a class="rightBranch"> 1. Additional Analysis <br/>
+												2. Comments and Compliments <br/>
+												3. Intelligence Conclusions </a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a id="rightBranch1"> If Not Required </a></li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+			<div class="metaData" onclick="toggleVisibility('dg6')">
+				<i class="fa fa-file-text-o" style="font-size:48px;color:gray"></i>
+			</div>
+			<div class="dataGeneration" style="display:none" id="dg6">
+				<p> From Additional Report Writing and Completion </p>
+				<ul>
+					<li> Types of data output that needed additional touch </li>
+					<li> Amount of data that needed no more additional writing  </li>
+				</ul>
+			</div>
+		</div>
+		<div class="blocks" id="completionData">
+			<span id="completionData1" onclick="toggleVisibility('comContent')"> Completion </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('comContent')"> Flowchart </p>
+			<div class="tree">
+			<ul class="flowChart" id="comContent" style="display:none">
+				<li><a> Completion </a>
+				<ul><li><a> Communication/Reporting and Publishing </a>
+						<ul><li><a> Communication/Reporting </a></li>
+							<li><a> Publishing </a></li>
+						</ul></li>
+					<li><a>Storage of Data </a>
+						<ul><li><a class="leftBranch lDownBranch"> Completed Data </a>
+							<ul><li><a class="blankDown lineAtMiddle"> If Required, Refine <br/> and Send to <br/> data saving </a></li>
+							</ul></li>
+							<li><a class="rightBranch rDownBranch"> Residue Data </a>
+							<ul><li><a class="blankDown"> Backups </a></li>
+							</ul></li>
+						</ul></li>
+					<li><a> Storage of Reports and Updates </a>
+						<ul><li><a> Digital </a>
+							<ul><li><a> 1. Hard Drives <br/>
+										2. Clouds </a>
+								<ul><li><a> Backups </a>
+									<ul><li><a class="sideDown" id="lineToRight"> Backups Of Backups </a></li></ul>
+									</li></ul>
+								
+								</li>
+							</ul></li>
+							<li><a> Non-Digital </a>
+								<ul><li><a class="divideDown"> Secure Vaults </a></li>
+									<li><a> Referencing </a>
+									<ul><li><a class="sideRight" id="scanAndDigital"> Scanned and Digital </a></li></ul> 
+									</li>
+								</ul></li>
+						</ul></li>
+				</ul></li>
+			</ul>
+			</div>
+			<div class="metaData" onclick="toggleVisibility('dg7')">
+				<i class="fa fa-file-text-o" style="font-size:48px;color:gray"></i>
+			</div>
+			<div class="dataGeneration" style="display:none" id="dg7">
+				<p> From Storage </p>
+				<ul>
+					<li> No. of access on library by users and<br/>
+						registered accounts </li>
+					<li> No. of Security Breaches </li>
+					<li> Types of data and reports stored and updated </li>
+					<li> No. and types of data refined </li>
+					<li> Data's relevancy with time and situations </li>
+				</ul>
+			</div>
+		</div>
+		<div class="blocks" id="reportingStatus">
+			<span id="reportingStatus1" onclick="toggleVisibility('rsContent')"> Reporting Status </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('rsContent')"> Flowchart </p>
+			<div class="tree">
+			<ul class="flowChart" id="rsContent" style="display:none">
+				<li> <a> Communication/Reporting </a>
+					<ul><li><a> Internal </a>
+							<ul><li><a class="leftBranch" id="leftBranch2"> Individuals </a></li>
+								<li><a class="downLine"> Departments </a></li>
+							</ul>
+						</li>
+						<li><a> External </a>
+							<ul><li><a class="downLine"> Partners </a>
+								<ul><li><a class="bDown middleLine"> Medium and Report Types </a></li>
+								</ul></li>
+								<li><a class="downLine"> Concerned Groups </a></li>
+								<li><a class="rightBranch" id="rightBranch2"> Government </a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="blocks" id="mediumUsed">
+			<span id="mediumUsed1" onclick="toggleVisibility('meusContent')"> Medium Used </span>
+			<hr width="1px" size="auto"/>
+			<p class="headers" onclick="toggleVisibility('meusContent')"> Flowchart </p>
+			<div class="tree">
+			<ul class="flowChart 3" id="meusContent" style="display:none">
+				<li><a> Medium and Report Types </a>
+					<ul><li><a> By Emails/Posts </a>
+							<ul><li><a class="dashToDown dtd2"> Digital and Printed <br/> Reports </a></li></ul>
+						</li>
+						<li><a> Newsletter </a>
+							<ul><li><a class="dashToDown dtd3"> Business Newsletter </a></li>
+								<li><a class="dashToDown dtd4"> Public Newsletter </a></li>
+							</ul>
+						</li>
+						<li><a> Publications </a>
+							<ul><li><a> Book, Articles, Researches, <br/> Reports (To All) </a></li></ul>
+						</li>
+						<li><a> Internet </a>
+							<ul><li><a class="leftBranch lDownBranch"> Website/Social Media </a>
+									<ul><li><a class="leftBranch blankDown lineAtMiddle"> Merchants, Registered <br/> Business Individuals <br/>and Org. </a>
+										<ul><li><a class="middleLine bDown placeMiddle"> News:<br/>1.Activities<br/>2.Publications<br/>3.Reports</a></li>
+										</ul></li>
+									</ul></li>
+								<li><a class="rightBranch rDownBranch"> Application </a>
+								<ul><li><a class="rightBranch blankDown"> Community, Media, Individual,<br/> Students, Researchers,<br/> Gov. Agencies, Other Agencies </a></li>
+								</ul></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="pContainer" style="margin-top: 40px;" id="containPara3">
+				<p class="dashToUp dtu1"> To: Individuals </p>
+				<p> Departments </p>
+				<p> Partners </p>
+				<p> Concerned Groups </p>
+				<p> Government </p>
+				<p class="dashToUp dtu2"> Public/Media </p>
+			</div>
+			</div>
+			<div class="metaData" onclick="toggleVisibility('dg8')">
+				<i class="fa fa-file-text-o" style="font-size:48px;color:gray"></i>
+			</div>
+			<div class="dataGeneration" style="display:none" id="dg8">
+				<p> From Communication and Reporting Publication </p>
+				<ul>
+					<li> No. of Reports provided and Clients </li>
+					<li> Status of Reports </li>
+					<li> Amount of digital and non-digital reports </li>
+					<li> Amount of business Accounts, Partners Accounts, community Groups and<br/>
+						Individual Accounts </li>
+					<li> And Access made by them through newsletters links </li> 
+					<li> Accounts activities, web activities, application activities </li>
+					<li> Blog views, articles viewed, reports downloaded </li>
+					<li> Crowd sourcing data by survey, questionnaires and preferences, feedbacks, <br/>
+						comments, likes and dislikes (business and normal individuals) </li>
+					<li> Report Security and Status </li>
+					<li> Reports preferred by Business </li>
+					<li> Reports preferred by Media </li>
+					<li> Reports preferred by Researchers </li>
+					<li> Reports preferred by students and interns </li>
+					<li> Reports preferred by Partners and concerned groups </li>
+					<li> Reports preferred by Government Agencies </li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<script src="ws.js"></script>
+</body>	
+</html>

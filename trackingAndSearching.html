@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+		/*@font-face {
+		font-family: "Akzidenz Grotesk Next";
+		src: url("AGNfonts/AGNextRegular.otf") format("opentype");
+		}*/
+		@font-face {
+			font-family: "Akzidenz Grotesk Next";
+			src: url("AGNfonts/AGNextLight.otf") format("opentype");
+		}
+		@font-face {
+			font-family: "Akzidenz Grotesk Next";
+			src: url("AGNfonts/AGNextBold.otf") format("opentype");
+			font-weight: bold;
+		}
+		@font-face {
+			font-family: "Akzidenz Grotesk Next";
+			src: url("AGNfonts/AGNextBoldIta.otf") format("opentype");
+			font-style: italic;
+			font-weight: bold;
+		}
+		@font-face {
+			font-family: "Akzidenz Grotesk Next";
+			src: url("AGNfonts/AGNextIta.otf") format("opentype");
+			font-style: italic;
+		}
+		body {
+			font-family: "Akzidenz Grotesk Next";
+		}
+		#fullBlock {
+			position: relative;
+			max-width: 600px;
+			height: 1340px;
+			border: 2px solid transparent;
+			margin: auto;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+		}
+		.innerBlock {
+			border: 1px solid transparent;
+			display: inline-block;
+			padding: 0px;
+			margin: 0px;
+			float: left;
+			width: 298px;
+		}
+		.lowerBlock {
+			clear: both;
+			float: left;
+			border-top: 1px dashed gray;
+			padding: 0px;
+			margin: 0px;
+			width: 596px;
+		}
+		p, span {
+			position: relative;
+			padding: 5px 10px;
+			margin: 10px;
+			border: 1px solid lightgray;
+			border-top: 5px solid lightgray;
+			cursor: pointer;
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+		}
+		span {
+			display: inline-block;
+			float: left;
+			margin: 5px 10px;
+		}
+		p:hover, span:hover {
+			border-color: transparent;
+			background-color: lightgray;
+		}
+		.lineDown::after {
+			content: "\2193";
+			position: absolute;
+			top: 100%;
+			margin-top: -10px;
+			left: 45%;
+			font-size: 30px;
+			color: gray;
+		}
+		
+		.downy {
+			margin-top: 20px;
+			clear: both;
+		}
+		.diff {
+			margin-top: 46px;
+		}
+		.diff::before {
+			content: "\2193";
+			position: absolute;
+			bottom: 100%;
+			left: 45%;
+			font-size: 30px;
+			color: gray;
+			margin-bottom: 3px;
+		}
+		hr {
+			clear: both;
+			position: absolute;
+			top: 350px;
+			left: 364px;
+			background-color: gray;
+		}
+		/*#hrLine::before {
+			position: absolute;
+			content:"";
+			top: 100%;
+			left: -12%;
+			width: 104%;
+			height: 25px;
+			border-bottom: 2px solid gray;
+		}*/
+		.lineAbove::after {
+			position: absolute;
+			content:"";
+			bottom: 100%;
+			right: 49%;
+			width: 115%;
+			height: 31px;
+			border-top: 1px solid gray;
+		}
+		.upperLine::before {
+			position: absolute;
+			content: "";
+			right: 100%;
+			bottom: 50%;
+			width: 280px;
+			height: 600px;
+			z-index: -1;
+			border-left: 1px solid gray;
+			border-bottom: 1px solid gray;
+			border-radius: 0 0 0 5px;
+		}
+		.upperLine::after {
+			position: absolute;
+			content: "";
+			right: 50%;
+			top: 100%;
+			width: 360px;
+			height: 25px;
+			z-index: -1;
+			border-right: 2px dashed gray;
+			border-bottom: 2px dashed gray;
+		}
+		.arrowAtBottom::before {
+			position: absolute;
+			content: "";
+			left: 15px;
+			top: 93%;
+			border: 5px solid transparent;
+			border-bottom: 5px solid gray;
+		}
+		.dashLineDown::before {
+			position: absolute;
+			content: "";
+			left: 53%;
+			
+			width: 445px;
+			height: 236px;
+			z-index: -1;
+			
+			border-bottom: 2px dashed gray;
+		}
+		.dld1::before {
+			top: 100%;
+			border-left: 2px dashed gray;
+		}
+		.dld1:after {
+			position: absolute;
+			content: "";
+			right: 100%;
+			top: 50%;
+			width: 100px;
+			border-bottom: 2px dashed gray;
+		}
+		.dld2::before {
+			left: 50%;
+			bottom: -20px;
+			width: 300px;
+			height: 510px;
+			border-right: 2px dashed gray;
+		}
+		.dld2::after {
+			position: absolute;
+			content: "";
+			left: 50%;
+			top: 100%;
+			height: 20px;
+			border-left: 2px dashed gray;
+		}
+		.contentAfter::after {
+			content: "\2190 To Data Output";
+			position: absolute;
+			bottom: 70px;
+			left: -5px;
+		}
+		.contentAfter::before {
+			content: "To Backups \2192";
+			position: absolute;
+			bottom: 70px;
+			right: -5px;
+		}
+		.contentBefore::before {
+			content: "\2190 To Processing Unit";
+			position: absolute;
+			bottom: -80px;
+			left: -35px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="fullBlock">
+		<p> Tracking and Searching Unit </p>
+		<p> Searching Unit </p>
+		<div class="innerBlock"> 
+		<span class="arrowAtBottom"> A. Specific </span>
+		<span class="lineDown"> Like; <br/>
+				Companies <br/>
+				Individuals <br/>
+				Events <br/>
+				Technologies <br/>
+				Devices <br/>
+				MISC </span>
+		<span class="downy" style="margin-left: 40px"> AI/ML (For Review) </span>
+		<span class="lineDown contentBefore" style="margin-left: 40px">
+			- Sourcing: Searches by the contents name <br/>
+			- Collection and Management <br/>
+			- Analysis and Selection <br/><br/>
+			Human Supervision, <br/>
+			Interaction and Editing </span>
+		<span class="downy dashLineDown dld1" style="margin-left: 100px"> Basic Report </span>							
+		</div>
+		
+		<div class="innerBlock" style="border-left: 1px dashed gray;">
+		<span style="float:right"> B. Factors related </span> <br/>
+		<span class="lineDown" style="margin-left: 50px"> Need/Focus Determination <br/> And AI/ML Feed </span>
+		<span class="lineDown downy" style="margin-left: 70px"> Predetermined Tops </span>
+		<span class="lineDown downy" id="hrLine" style="margin-left: 80px"> Content Analysis </span>
+		<span class="lineDown downy diff"> Factors,<br/>Features,<br/>Quality,<br/>Performance<br/><br/> </span>
+		<span class="diff lineAbove"> Sales,<br/>Investment,<br/>Innovation,<br/>Tech.Adoption,<br/>Ranking,<br/>
+				Feedbacks,<br/>Certification,<br/>Stocks </span>
+		<span class="lineDown" style="margin-top: -40px"> Comparison </span>
+		<span class="lineDown downy"> Prediction and <br/> Estimation </span>
+		<span style="margin-left: -2px"> Human Supervision </span>
+		<span class="lineDown downy"> Comparison and Analysis </span>
+		<span class="downy upperLine" style="margin-bottom: 40px;"> Top Selection </span>
+		</div>
+		<div class="lowerBlock">
+		<p class="contentAfter"> Auto Data Update Unit (AI, Tracking Device or Software) </p>
+		<p class="lineDown" style="margin-bottom:5px"> Types (Target market, Competition, Economy, Profiling Generated data, Add.Reports) </p>
+		<span class="lineDown downy" style="margin-left: 100px"> Contents (pre developed) <br/> Categories & Subcategories </span>
+		<span style="margin-top: 20px"> Update Contents </span>
+		<span class="lineDown downy" style="margin-left: 130px"> Web Internet (Pre-defined and Updated Sources) </span>
+		<span class="lineDown downy" style="margin-left: 40px"> Search &nbsp&nbsp&nbsp&nbsp Video/Audio Recognition &nbsp&nbsp&nbsp&nbsp Downloads &nbsp&nbsp&nbsp&nbsp Screenshots/Video Capture </span>
+		<span class="lineDown downy" style="margin-left: 230px"> Data/Info Pull </span>
+		<span class="lineDown downy" style="margin-left: 190px"> Human Review and Analysis </span>
+		<span class="downy dashLineDown dld2" style="margin-left: 185px;"> Authorization and auto Update </span>
+		</div>
+	</div>
+<script>
+</script>
+</body>
+</html>
